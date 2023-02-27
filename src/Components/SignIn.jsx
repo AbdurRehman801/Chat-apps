@@ -1,22 +1,21 @@
-import { GoogleAuthProvider, signInWithRedirect } from 'firebase/auth'
-import React from 'react'
-import GoogleButton from 'react-google-button'
-import {auth} from '../firebase'
-
+import React from "react";
+import { GoogleAuthProvider, signInWithRedirect } from "firebase/auth";
+import GoogleButton from "react-google-button";
+import { auth } from "../firebase";
 
 const style = {
-    wrapper: `flex justify-center`
-}
+  wrapper: `flex justify-center`,
+};
 const SignIn = () => {
-    const googleSignIn = ()=>{
-        const provider = new GoogleAuthProvider()
-        signInWithRedirect(auth, provider)
-    }
+  const googleSignIn = () => {
+    const provider = new GoogleAuthProvider();
+    signInWithRedirect(auth, provider);
+  };
   return (
     <div className={style.wrapper}>
-        <GoogleButton onClick={googleSignIn}/>
+      <GoogleButton onClick={googleSignIn} />
     </div>
-  )
-}
+  );
+};
 
-export default SignIn
+export default SignIn;
