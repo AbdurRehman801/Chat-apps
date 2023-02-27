@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 import Navbar from './Components/Navbar';
 import {auth} from './firebase'
 import {useAuthState} from 'react-firebase-hooks/auth'
