@@ -16,11 +16,12 @@ const Navbar = () => {
         <h1 className={style.heading}>
             Chat-app
         </h1>
-        {user ? <LogOut/>: <SignIn/> }
+        
         
         
     </div>
   )
 }
+// {user ? <LogOut/>: <SignIn/> }
 
 export default Navbar

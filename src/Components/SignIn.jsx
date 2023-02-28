@@ -7,13 +7,13 @@ const style = {
   wrapper: `flex justify-center`,
 };
 const SignIn = () => {
-  const googleSignIn = () => {
-    const provider = new GoogleAuthProvider();
-    signInWithRedirect(auth, provider);
-  };
+  // const googleSignIn = () => {
+  //   const provider = new GoogleAuthProvider();
+  //   signInWithRedirect(auth, provider);
+  // };
   return (
     <div className={style.wrapper}>
-      <GoogleButton onClick={googleSignIn} />
+      {/* <GoogleButton onClick={googleSignIn} /> */}
     </div>
   );
 };
